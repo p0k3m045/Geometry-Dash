@@ -17,9 +17,5 @@ void setup() {
   rect(cubeSquareDivX, cubeSquareDivY, cubeSquareDivSize, cubeSquareDivSize);
 }
 
-void keyPressed() {
-
-  if (key == ESC) {
-    exit();
-  }
+void draw() {
 }
