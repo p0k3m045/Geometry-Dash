@@ -14,7 +14,7 @@ void setup() {
   float cubeSquareDivY = appWidth * 1/4;
   float cubeSquareDivSize = appWidth * 1/2;
 
-  rect(cubeSquareDivX, cubeSquareDivY, cubeSquareDivSize, cubeSquareDivSize);
+  rect(850, 500, 200, 200);
 }
 
 void draw() {
