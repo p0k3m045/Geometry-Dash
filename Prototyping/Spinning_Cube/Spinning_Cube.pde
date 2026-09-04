@@ -22,5 +22,18 @@ void draw() {
 }
 
 void cubeAnimations() {
+  pushMatrix(); // Save the current transformation matrix
   
+  String cubeDirectory = "../../Dependencies/Images/Cube-1.png";
+  
+  PImage cubeImage = loadImage(cubeDirectory);
+  
+  translate(cubeSquareDivX + cubeSquareDivSize / 2, cubeSquareDivY + cubeSquareDivSize / 2); // Move to the center of the cube
+  
+  rotate(frameCount * 0.05); // Rotate based on the frame count
+  
+  rectMode(CENTER); // Set rectangle mode to center
+  image(cubeImage, 0, 0, cubeSquareDivSize, cubeSquareDivSize); // Draw the cube at the origin
+  
+  popMatrix(); // Restore the previous transformation matrix
 }
