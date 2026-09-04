@@ -1,21 +1,26 @@
 //SPINNING CUBE
 
-//for some reason it wont let me use floats for the rect so I have to just use plain old numbers instead of variables
-
-int appWidth = displayWidth;
-int appHeight = displayHeight;
+float cubeSquareDivX, cubeSquareDivY, cubeSquareDivSize;
 
 void setup() {
   fullScreen();
 
+  int appWidth = displayWidth;
+  int appHeight = displayHeight;
+
   println (displayWidth, displayHeight);
 
-  float cubeSquareDivX = appWidth * 1/4;
-  float cubeSquareDivY = appWidth * 1/4;
-  float cubeSquareDivSize = appWidth * 1/2;
+  cubeSquareDivX = appWidth * 1/4;
+  cubeSquareDivY = appHeight * 1/4;
+  cubeSquareDivSize = appWidth * 1/4;
 
-  rect(850, 500, 200, 200);
+  rect(cubeSquareDivX, cubeSquareDivY, cubeSquareDivSize, cubeSquareDivSize);
 }
 
 void draw() {
+  cubeAnimations();
+}
+
+void cubeAnimations() {
+  
 }
