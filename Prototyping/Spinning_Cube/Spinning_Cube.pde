@@ -5,6 +5,8 @@ float cubeSquareDivX, cubeSquareDivY, cubeSquareDivSize;
 void setup() {
   fullScreen();
 
+  background(0, 0, 0);
+
   int appWidth = displayWidth;
   int appHeight = displayHeight;
 
@@ -14,7 +16,7 @@ void setup() {
   cubeSquareDivY = appHeight * 1/4;
   cubeSquareDivSize = appWidth * 1/8;
 
-  rect(cubeSquareDivX, cubeSquareDivY, cubeSquareDivSize, cubeSquareDivSize);
+  //rect(cubeSquareDivX, cubeSquareDivY, cubeSquareDivSize, cubeSquareDivSize);
 }
 
 void draw() {
